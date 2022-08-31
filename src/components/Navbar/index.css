@@ -1,0 +1,17 @@
+.Navbar {
+  margin-bottom: 20px;
+  height: 7.5rem;
+  background-color:  rgb(26, 0, 45);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  justify-content: space space-evenly;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 10px;
+}
+
+
+
+

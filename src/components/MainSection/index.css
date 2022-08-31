@@ -1,7 +1,22 @@
 .MainSection {
-  padding: 100px 40px;
+  padding: 60px 40px;
   display: flex;
   background: lightseagreen;
-
   height: 100vh;
+  
+}
+
+.MainSection__imgContainer{
+  display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+}
+.MainSection__imgContainer::-webkit-scrollbar {
+  display: none;
 }

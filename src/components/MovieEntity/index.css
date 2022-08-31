@@ -1,6 +1,7 @@
 .MovieEntity {
   display: flex;
-  background-color: rgb(26, 0, 45);;
+  margin-top: 7.5rem;
+  background-color: rgb(26, 0, 45);
   color: white;
   text-transform: uppercase;
 }
@@ -11,15 +12,16 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 22%;
-  padding: 20px;
+ padding-left: 10px;
+  
 }
 
 .MovieEntity__info--title {
-  transform: translate(100px, 120px);
+ 
 }
 
 .MovieEntity__info--title h1 {
-  font-size: 4rem;
+ font-size: 2rem;
 }
 
 .MovieEntity__info--bottom {
@@ -43,11 +45,11 @@
 .MovieEntity__info--bottom--tagline {
   position: absolute;
   top: 0;
-  right: -30px;
+  right: -35px;
   writing-mode: vertical-rl;
   font-size: 1.5rem;
   font-weight: bold;
-  height: 300px;
+  height: 280px;
   transform: translateY(-120px);
 }
 
@@ -64,7 +66,7 @@
 }
 
 .MovieEntity__book--btn {
-  width: 200px;
+  max-width: 200px;
   padding: 20px 30px;
   border: 0;
   font-weight: bold;

@@ -1,4 +1,5 @@
 .MainInput {
+  margin: 0;
   height: 40px;
   display: flex;
   position: absolute;
