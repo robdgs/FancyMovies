@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import MainCard from "../MainCard";
 import TopRatedList from "../TopRatedList";
 import { GET } from "../../utils/api";
 import "./index.css";
@@ -24,19 +23,28 @@ const MainSection = () => {
   //console.log(movieLists.popular);
 
   return (
-    <div className="MainSection">
-     
-    <div className="MainSection__imgContainer">
-      {/* {movieLists.popular && <MainCard cardData={movieLists?.popular[0]} />} */}
-      {/*  il ? prima del . pone la domanda "esiste?" se esiste allora procede. */}
-      {movieLists?.popular?.length >= 1 ? (
-        movieLists.popular.map((serie) => (
-          <TopRatedList cardData={serie} nCards={1} key={serie.id} />
-        ))
-      ) : (
-        <p>loading</p>
-      )}
-    </div>
+    <div id="main-section" className="MainSection">
+      <div className="MainSection__imgContainer">
+        {/* {movieLists.popular && <MainCard cardData={movieLists?.popular[0]} />} */}
+        {/*  il ? prima del . pone la domanda "esiste?" se esiste allora procede. */}
+
+        {movieLists?.topRated?.length >= 1 ? (
+          movieLists.topRated.map((serie) => (
+            <TopRatedList cardData={serie} nCards={1} key={serie.id} />
+          ))
+        ) : (
+          <p>loading</p>
+        )}
+      </div>
+      <div id="top-rated" className="MainSection__imgContainer">
+        {movieLists?.popular?.length >= 1 ? (
+          movieLists.popular.map((serie) => (
+            <TopRatedList cardData={serie} nCards={1} key={serie.id} />
+          ))
+        ) : (
+          <p>loading</p>
+        )}
+      </div>
     </div>
   );
 };
