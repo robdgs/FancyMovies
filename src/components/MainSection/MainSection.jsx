@@ -24,10 +24,10 @@ const MainSection = () => {
 
   return (
     <div id="main-section" className="MainSection">
+        <h1>TOP RATED</h1>
       <div className="MainSection__imgContainer">
         {/* {movieLists.popular && <MainCard cardData={movieLists?.popular[0]} />} */}
         {/*  il ? prima del . pone la domanda "esiste?" se esiste allora procede. */}
-
         {movieLists?.topRated?.length >= 1 ? (
           movieLists.topRated.map((serie) => (
             <TopRatedList cardData={serie} nCards={1} key={serie.id} />
@@ -36,6 +36,7 @@ const MainSection = () => {
           <p>loading</p>
         )}
       </div>
+        <h1 className="MainSection_topRated">NEW TITLES</h1>
       <div id="top-rated" className="MainSection__imgContainer">
         {movieLists?.popular?.length >= 1 ? (
           movieLists.popular.map((serie) => (

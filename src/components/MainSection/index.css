@@ -2,7 +2,11 @@
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
- 
+ color: whitesmoke;
+}
+.MainSection h1 {
+ font-size: 3em;
+  
 }
 
 .MainSection__imgContainer{
