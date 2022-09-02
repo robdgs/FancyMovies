@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 import TopRatedList from "../TopRatedList";
 import { GET } from "../../utils/api";
 import "./index.css";
@@ -50,4 +50,4 @@ const MainSection = () => {
   );
 };
 
-export default MainSection;
+export default memo(MainSection);
