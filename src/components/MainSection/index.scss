@@ -1,3 +1,5 @@
+@import '../../style/mixins';
+
 .MainSection {
   padding: 60px 40px;
   display: flex;
@@ -9,8 +11,9 @@
  }
 
  &__imgContainer{
-  display: flex;
-  align-items: center;
+  @include flex-element (row, flex-start, center);
+  // display: flex;
+  // align-items: center;
   gap: 10px;
   flex-grow: 1;
   overflow-y: hidden;

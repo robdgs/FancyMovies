@@ -1,3 +1,5 @@
+@import '../../style/_mixins';
+
 .MovieEntity {
   display: flex;
   margin-top: 7.5rem;
@@ -5,10 +7,7 @@
   text-transform: uppercase;
 
   &__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    @include flex-element(column, space-between, flex-end);
     width: 22%;
     padding-left: 10px;
 
@@ -53,8 +52,7 @@
   }
 
   &__book {
-    display: flex;
-    flex-direction: column-reverse;
+    @include flex-element (column-reverse);
     width: 22%;
 
     &--btn {

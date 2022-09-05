@@ -1,4 +1,6 @@
+@import './style/variables';
+
 html, body{
     scroll-behavior: smooth;
-    background: rgb(26, 0, 45);
+    background: $primary-color;
 }

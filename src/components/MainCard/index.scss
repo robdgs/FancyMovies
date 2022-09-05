@@ -1,7 +1,6 @@
+@import '../../style/_mixins';
 .MainCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-element (column, center);
   position: relative;
   width: 400px;
   height: 400px;
