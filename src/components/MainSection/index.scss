@@ -1,0 +1,25 @@
+.MainSection {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+ color: whitesmoke;
+
+ h1{
+  font-size: 3em;
+ }
+
+ &__imgContainer{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+ }
+ &::-webkit-scrollbar{
+  display: none;
+ }
+
+}

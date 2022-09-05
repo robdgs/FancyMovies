@@ -1,7 +1,7 @@
 .Navbar {
   margin-bottom: 20px;
   height: 7rem;
-  background-color:  rgb(26, 0, 45);
+  background-color: rgb(26, 0, 45);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   width: 100%;
   display: flex;
@@ -14,20 +14,14 @@
   text-transform: uppercase;
   font-weight: bold;
 
+  &__list--right {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding-top: 35px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
 }
-.Navbar__list--right{
-  display:flex;
-  list-style: none;
-  gap: 50px;
-  padding-top: 35px;
- 
-}
-.Navbar__list--right a {
-  text-decoration: none;
-  color: white;
-}
-
-
-
-
-

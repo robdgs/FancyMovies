@@ -1,10 +1,9 @@
 import { memo } from "react";
 import MainCard from "../MainCard";
-import "./index.css";
+import "./index.scss";
 
 const TopRatedList = ({ cardData, nCards }) => {
   return (
-    
     <div className="TopRatedList">
       <div className="TopRatedList__title">
         <h3>{cardData.title}</h3>

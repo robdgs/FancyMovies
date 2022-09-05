@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 
 const MainCard = ({ cardData, cardStyle={} }) => {
   const { title, vote_average, poster_path } = cardData;

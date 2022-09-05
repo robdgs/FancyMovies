@@ -3,7 +3,7 @@ import MovieEntity from './components/MovieEntity'
 import MainSection from './components/MainSection'
 import MainInput from './components/MainInput'
 import Navbar from './components/Navbar'
-import './App.css';
+import './App.scss';
 
 function App() {
   const [inputValue, setInputValue] = useState("345678");

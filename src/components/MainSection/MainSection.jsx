@@ -1,7 +1,7 @@
 import { useState, useEffect, memo } from "react";
 import TopRatedList from "../TopRatedList";
 import { GET } from "../../utils/api";
-import "./index.css";
+import "./index.scss";
 
 const MainSection = () => {
   const [movieLists, setMovieLists] = useState({});
@@ -24,7 +24,7 @@ const MainSection = () => {
 
   return (
     <div id="main-section" className="MainSection">
-        <h1>TOP RATED</h1>
+      <h1>TOP RATED</h1>
       <div className="MainSection__imgContainer">
         {/* {movieLists.popular && <MainCard cardData={movieLists?.popular[0]} />} */}
         {/*  il ? prima del . pone la domanda "esiste?" se esiste allora procede. */}
@@ -36,7 +36,7 @@ const MainSection = () => {
           <p>loading</p>
         )}
       </div>
-        <h1 className="MainSection_topRated">NEW TITLES</h1>
+      <h1 className="MainSection_topRated">NEW TITLES</h1>
       <div id="top-rated" className="MainSection__imgContainer">
         {movieLists?.popular?.length >= 1 ? (
           movieLists.popular.map((serie) => (

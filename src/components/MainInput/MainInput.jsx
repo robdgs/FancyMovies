@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "./index.css";
+import "./index.scss";
 
 const MainInput = ({setInputValue}) => {
   const inputRef = useRef(null);
