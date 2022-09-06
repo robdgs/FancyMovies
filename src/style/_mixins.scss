@@ -1,7 +1,14 @@
-@mixin flex-element ($direction: row, $justify: flex-start, $align: stretch){
-display:flex;
-flex-direction: $direction;
-justify-content: $justify;
-align-items: $align;
+@mixin flex-element($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
 
+@mixin box-model($margin: 0, $border: 0, $padding: 0, $height: auto, $width: auto) {
+  margin: $margin;
+  border: $border;
+  padding: $padding;
+  height: $height;
+  width: $width;
 }
