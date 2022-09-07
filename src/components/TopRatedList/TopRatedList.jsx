@@ -1,11 +1,11 @@
 import { memo } from "react";
 import MainCard from "../MainCard";
-import styles from './index.module.scss';
+import "./index.scss";
 
 const TopRatedList = ({ cardData, nCards }) => {
   return (
-    <div className={styles.TopRated}>
-      <div className={styles.title}>
+    <div className="TopRatedList">
+      <div className="TopRatedList__title">
         <h3>{cardData.title}</h3>
       </div>
       {[...Array(nCards)].map((i, ii) => (
@@ -15,7 +15,7 @@ const TopRatedList = ({ cardData, nCards }) => {
           key={ii}
         />
       ))}
-      <div className={styles.overview}>
+      <div className="TopRatedList__overview">
         {" "}
         {/* <p>{cardData.overview}</p>  */}
       </div>

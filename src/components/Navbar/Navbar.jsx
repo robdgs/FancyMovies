@@ -10,8 +10,6 @@ const Navbar = () => {
         <li>
         <a href="#top-rated">Top Rated</a>
         </li>
-       
-
       </ul>
     </div>
   );
