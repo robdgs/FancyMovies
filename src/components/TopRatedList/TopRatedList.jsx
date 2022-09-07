@@ -17,7 +17,7 @@ const TopRatedList = ({ cardData, nCards }) => {
       ))}
       <div className="TopRatedList__overview">
         {" "}
-        <p>{cardData.overview}</p>
+        {/* <p>{cardData.overview}</p>  */}
       </div>
     </div>
   );
