@@ -11,7 +11,7 @@
   font-size: 3em;
  }
 
-  &__imgContainer{
+  .imgContainer{
    @include flex-element (row, flex-start, center);
    // display: flex;
   // align-items: center;

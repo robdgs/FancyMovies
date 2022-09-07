@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "./index.scss";
+import styles from './index.module.scss';
 
 const MainInput = ({setInputValue}) => {
   const inputRef = useRef(null);
@@ -18,7 +18,7 @@ const MainInput = ({setInputValue}) => {
  
 
   return (
-    <form className="MainInput" onSubmit={onHandleSubmit}>
+    <form className={styles.MainInput} onSubmit={onHandleSubmit}>
       <input
         ref={inputRef}
       

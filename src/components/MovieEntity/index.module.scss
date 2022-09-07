@@ -6,16 +6,16 @@
   color: white;
   text-transform: uppercase;
 
-  &__info {
+  .info {
     @include flex-element(column, space-between, flex-end);
     width: 22%;
     padding-left: 10px;
 
-    &--title { 
-        font-size: 2rem;
-    }
+    // .title { 
+    //     font-size: 1.7rem;
+    // }
 
-    &--bottom {
+    .bottom {
       position: relative;
       width: 100%;
       align-self: flex-end;
@@ -32,7 +32,7 @@
         list-style-type: none;
       }
 
-      &--tagline {
+      .tagline {
         position: absolute;
         top: 0;
         right: -35px;
@@ -44,17 +44,17 @@
       }
     }
   }
-  &__poster {
+  .poster {
     width: 56%;
     height: 100vh;
     object-fit: cover;
   }
 
-  &__book {
+  .book {
     @include flex-element (column-reverse);
     width: 22%;
 
-    &--btn {
+    .btn {
       @include box-model(0, 0, 20px 30px);
       max-width: 200px;
       font-weight: bold;

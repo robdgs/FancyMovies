@@ -1,9 +1,9 @@
-import "./index.scss";
+import styles from './index.module.scss';
 
 const Navbar = () => {
   return (
-    <div className="Navbar">
-      <ul className="Navbar__list--right">
+    <div className={styles.Navbar}>
+      <ul className={styles.list}>
         <li>
         <a href="#main-section">Popular Films</a>
         </li>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { GET } from "../../utils/api.js";
+import styles from './index.module.scss';
 
-import "./index.scss";
 
 const MovieEntity = ({ movieID }) => {
   const [movieData, setMovieData] = useState({});
@@ -15,13 +15,13 @@ const MovieEntity = ({ movieID }) => {
     movieData;
 
   return (
-    <div className="MovieEntity">
-      <div className="MovieEntity__info">
-        <div className="MovieEntity__info--title">
+    <div className={styles.MovieEntity}>
+      <div className={styles.info}>
+        <div className={styles.title}>
           <p>title</p>
           <h1>{title}</h1>
         </div>
-        <div className="MovieEntity__info--bottom">
+        <div className={styles.bottom}>
           <p>rating</p>
           <p>{vote_average || "not found"}</p>
           <p>genre</p>
@@ -29,16 +29,16 @@ const MovieEntity = ({ movieID }) => {
             {genres &&
               genres.map((genre) => <li key={genre.id}>{genre.name}</li>)}
           </ul>
-          <p className="MovieEntity__info--bottom--tagline">{tagline}</p>
+          <p className={styles.tagline}>{tagline}</p>
         </div>
       </div>
       <img
-        className="MovieEntity__poster"
+        className={styles.poster}
         src={`https://image.tmdb.org/t/p/original${poster_path}`}
         alt={original_title}
       />
-      <div className="MovieEntity__book">
-        <button className="MovieEntity__book--btn">Book it!</button>
+      <div className={styles.book}>
+        <button className={styles.btn}>Book it!</button>
       </div>
       {movieData ? console.log(movieData) : <p>loading...</p>}
     </div>
