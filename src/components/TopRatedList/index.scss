@@ -19,3 +19,12 @@
   //   height: 600px;
   // }
 }
+
+ @media only screen and (max-width: 770px) {
+   .TopRatedList{
+     .TopRatedList__title{
+     height:50px;
+      font-size:0.7rem ;
+     }
+   }
+ }
