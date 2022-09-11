@@ -1,29 +1,32 @@
 @import "../../style/mixins";
 
 .MainInput {
- @include box-model(0,0,0, 40px);
+  @include box-model(0, 0, 0, 40px);
   // margin: 0;
   // height: 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 40px;
   left: calc(50% - 170px);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
-  transition: all .35s;
-  
-   input{
-    padding-left: 14px;
+  transition: all 0.35s;
+
+  input {
+    height: 40px;
     width: 240px;
     border: 0;
     outline: none;
     font-weight: bold;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-   }
+  }
 
-   button{
+  button {
     width: 100px;
+    height: 42px;
     border: 0;
     font-weight: bold;
     background-color: white;
@@ -31,6 +34,16 @@
     cursor: pointer;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-   }
+  }
 }
 
+@media only screen and (max-width: 760px) {
+  .MainInput {
+    input {
+      height: 30px;
+    }
+    button {
+      height: 32px;
+    }
+  }
+}

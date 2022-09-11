@@ -25,3 +25,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px){
+  .Navbar{
+    height: 4rem;
+    .list{
+      display: none;
+    }
+  }
+}

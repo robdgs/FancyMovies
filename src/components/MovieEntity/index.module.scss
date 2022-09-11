@@ -1,4 +1,4 @@
-@import '../../style/_mixins';
+@import "../../style/_mixins";
 
 .MovieEntity {
   display: flex;
@@ -11,7 +11,7 @@
     width: 22%;
     padding-left: 10px;
 
-    // .title { 
+    // .title {
     //     font-size: 1.7rem;
     // }
 
@@ -51,7 +51,7 @@
   }
 
   .book {
-    @include flex-element (column-reverse);
+    @include flex-element(column-reverse);
     width: 22%;
 
     .btn {
@@ -68,5 +68,34 @@
         color: white;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .MovieEntity {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    .info {
+      width: auto;
+    }
+    .bottom {
+      width: auto;
+    }
+    .tagline {
+      font-weight: normal;
+    }
+    .title {
+      font-size: small;
+    }
+    .poster {
+      object-fit: contain;
+      width: 180px;
+      height: 300px;
+    }
+    .book {
+      display: none;
+    }
+    
   }
 }
